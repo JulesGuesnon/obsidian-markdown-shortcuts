@@ -37,7 +37,6 @@ export default class MarkdownCommands extends Plugin {
             },
         })
 
-        // This adds a settings tab so the user can configure various aspects of the plugin
         this.addSettingTab(new Settings(this.app, this))
 
         this.registerEditorSuggest(new CommandsSuggest(this.app, this))
