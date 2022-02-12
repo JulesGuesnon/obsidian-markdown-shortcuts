@@ -20,7 +20,7 @@ export default class MarkdownCommands extends Plugin {
         this.addCommand({
             id: "markdown-commands-enable",
             name: t.commandPalette.enable,
-            editorCallback: async (_editor: Editor, _view: MarkdownView) => {
+            callback: async () => {
                 this.settings.activated = true
 
                 await this.saveSettings()
@@ -30,7 +30,7 @@ export default class MarkdownCommands extends Plugin {
         this.addCommand({
             id: "markdown-commands-disabled",
             name: t.commandPalette.disabled,
-            editorCallback: async (_editor: Editor, _view: MarkdownView) => {
+            callback: async () => {
                 this.settings.activated = false
 
                 await this.saveSettings()
