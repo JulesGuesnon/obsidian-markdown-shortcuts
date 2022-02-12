@@ -34,12 +34,13 @@ You can also enable or disable from the [command palette](https://help.obsidian.
 First, you need to have `Obsidian v0.12.17+`.
 
 -   Go to `Settings > Community plugins`
--   Turn safe mod to `off`
+-   Turn safe mode to `off`
 -   Go to the [releases page](https://github.com/JulesGuesnon/obsidian-markdown-commands/releases)
 -   Download the latest `markdown-commands-<version>.zip`
 -   Put the zip into `<vault-folder>/.obsidian/plugins` (if the folder plugins doesn't exist you can create it)
 -   Extract it
 -   Enable the plugin in the settings and you're ready to go
+
     ![enable.png](./images/enable.png)
 
 # Any issue or suggestion?
