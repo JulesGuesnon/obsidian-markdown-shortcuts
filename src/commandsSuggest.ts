@@ -84,13 +84,13 @@ export default class CommandsSuggest extends EditorSuggest<Command> {
     selectSuggestion(cmd: Command, _evt: MouseEvent | KeyboardEvent): void {
         if (cmd.label === t.commandsSuggest.noResult) return
 
-        this.resetInfos()
-
         this.context.editor.replaceRange(
             cmd.value,
             { ...this.context.start, ch: this.cmdStartCh },
             this.context.end
         )
+
+        this.resetInfos()
 
         this.close()
     }
