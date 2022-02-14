@@ -38,14 +38,17 @@ export default class SettingTab extends PluginSettingTab {
             .addText(text => {
                 text.setValue(this.plugin.settings.triggerChar).onChange(
                     async value => {
-                        if (value.length < 1) {
+                        if (value.trim().length < 1) {
                             text.setValue(this.plugin.settings.triggerChar)
                             return
                         }
 
-                        if (value.length === 2) {
-                            text.setValue(value[1])
+                        if (value.trim().length === 1) {
+                            text.setValue(value[0])
+                            return
                         }
+
+                        text.setValue(value[1])
 
                         this.plugin.settings.triggerChar = value[1]
 
