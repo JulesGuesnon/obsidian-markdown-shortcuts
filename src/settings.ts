@@ -43,14 +43,18 @@ export default class SettingTab extends PluginSettingTab {
                             return
                         }
 
-                        if (value.trim().length === 1) {
-                            text.setValue(value[0])
-                            return
+                        let char = value[0]
+
+                        if (value.trim().length === 2) {
+                            char = value.replace(
+                                this.plugin.settings.triggerChar,
+                                ""
+                            )
                         }
 
-                        text.setValue(value[1])
+                        text.setValue(char)
 
-                        this.plugin.settings.triggerChar = value[1]
+                        this.plugin.settings.triggerChar = char
 
                         await this.plugin.saveSettings()
                     }
