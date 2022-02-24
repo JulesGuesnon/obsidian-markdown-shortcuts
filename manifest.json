@@ -1,9 +1,9 @@
 {
-    "id": "markdown-commands",
-    "name": "Markdown commands",
-    "version": "0.2.3",
+    "id": "markdown-shortcuts",
+    "name": "Markdown shortcuts",
+    "version": "0.3.0",
     "minAppVersion": "0.12.17",
-    "description": "Allows to write markdown from commands (example: >h1 -> #).",
+    "description": "Allows to write markdown from shortcuts (example: >h1 -> #).",
     "author": "Jules Guesnon",
     "authorUrl": "https://github.com/JulesGuesnon",
     "isDesktopOnly": false

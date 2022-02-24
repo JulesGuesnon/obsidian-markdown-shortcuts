@@ -30,8 +30,6 @@ export default class CommandsSuggest extends EditorSuggest<Command> {
         editor: Editor,
         _file: TFile
     ): EditorSuggestTriggerInfo {
-        if (!this.plugin.settings.activated) return null
-
         const currentLine = editor.getLine(cursor.line).slice(0, cursor.ch)
 
         if (
