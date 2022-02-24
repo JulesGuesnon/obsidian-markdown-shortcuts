@@ -1,11 +1,11 @@
-import MarkdownCommands from "../main"
+import MarkdownShortcuts from "../main"
 import { App, PluginSettingTab, Setting } from "obsidian"
 import t from "./i18n"
 
 export default class SettingTab extends PluginSettingTab {
-    plugin: MarkdownCommands
+    plugin: MarkdownShortcuts
 
-    constructor(app: App, plugin: MarkdownCommands) {
+    constructor(app: App, plugin: MarkdownShortcuts) {
         super(app, plugin)
         this.plugin = plugin
     }
@@ -19,18 +19,6 @@ export default class SettingTab extends PluginSettingTab {
         containerEl.createEl("p", {
             text: t.settings.description,
         })
-
-        new Setting(containerEl)
-            .setName(t.settings.toggle.title)
-            .setDesc(t.settings.toggle.description)
-            .addToggle(toggle => {
-                toggle
-                    .setValue(this.plugin.settings.activated)
-                    .onChange(async value => {
-                        this.plugin.settings.activated = value
-                        await this.plugin.saveSettings()
-                    })
-            })
 
         new Setting(containerEl)
             .setName(t.settings.character.title)

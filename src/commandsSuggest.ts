@@ -1,4 +1,4 @@
-import MarkdownCommands from "../main"
+import MarkdownShortcuts from "../main"
 import {
     App,
     Editor,
@@ -14,9 +14,9 @@ import t from "./i18n"
 export default class CommandsSuggest extends EditorSuggest<Command> {
     inCmd = false
     cmdStartCh = 0
-    plugin: MarkdownCommands
+    plugin: MarkdownShortcuts
 
-    constructor(app: App, plugin: MarkdownCommands) {
+    constructor(app: App, plugin: MarkdownShortcuts) {
         super(app)
         this.plugin = plugin
     }

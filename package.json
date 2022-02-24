@@ -1,5 +1,5 @@
 {
-    "name": "markdown-commands",
+    "name": "markdown-shortcuts",
     "version": "0.2.3",
     "description": "A configurable plugin for Obsidian that allow you to write commands to make markdown (example: >h1 -> #)",
     "main": "main.js",

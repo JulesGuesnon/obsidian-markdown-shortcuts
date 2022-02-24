@@ -1,41 +1,19 @@
 import { Editor, MarkdownView, Plugin } from "obsidian"
 import { Settings, CommandsSuggest, t } from "./src"
 
-interface MarkdownCommandsSettings {
-    activated: boolean
+interface MarkdownShortcutsSettings {
     triggerChar: string
 }
 
-const DEFAULT_SETTINGS: MarkdownCommandsSettings = {
-    activated: true,
+const DEFAULT_SETTINGS: MarkdownShortcutsSettings = {
     triggerChar: ">",
 }
 
-export default class MarkdownCommands extends Plugin {
-    settings: MarkdownCommandsSettings
+export default class MarkdownShortcuts extends Plugin {
+    settings: MarkdownShortcutsSettings
 
     async onload() {
         await this.loadSettings()
-
-        this.addCommand({
-            id: "markdown-commands-enable",
-            name: t.commandPalette.enable,
-            callback: async () => {
-                this.settings.activated = true
-
-                await this.saveSettings()
-            },
-        })
-
-        this.addCommand({
-            id: "markdown-commands-disabled",
-            name: t.commandPalette.disabled,
-            callback: async () => {
-                this.settings.activated = false
-
-                await this.saveSettings()
-            },
-        })
 
         this.addSettingTab(new Settings(this.app, this))
 
