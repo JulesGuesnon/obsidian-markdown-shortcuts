@@ -30,19 +30,19 @@ export default [
     },
     {
         label: "bold",
-        value: "**bold**",
+        value: "****",
     },
     {
         label: "italic",
-        value: "*italic*",
+        value: "**",
     },
     {
         label: "strike",
-        value: "~~strike~~",
+        value: "~~~~",
     },
     {
         label: "highlight",
-        value: "==highlight==",
+        value: "====",
     },
     {
         label: "quote",
@@ -50,25 +50,19 @@ export default [
     },
     {
         label: "ordered-list",
-        value: `
-1. First item
-2. Second item
-3. Third item`,
+        value: `1. `,
     },
     {
         label: "unordered-list",
-        value: `
-- First item
-- Second item
-- Third item`,
+        value: `- `,
     },
     {
         label: "external-link",
-        value: "[link text](https://my.link)",
+        value: "[]()",
     },
     {
         label: "image",
-        value: "![alt text](https://via.placeholder.com/150)",
+        value: "![]()",
     },
     {
         label: "table",
@@ -79,18 +73,18 @@ export default [
     },
     {
         label: "inline-code",
-        value: `\`let hello = "world"\``,
+        value: `\`\``,
     },
     {
         label: "codeblock",
         value: `
-\`\`\`rust
-let hello = 'world' 
+\`\`\`
+
 \`\`\``,
     },
     {
         label: "todo",
-        value: "- [ ] To do",
+        value: "- [ ] ",
     },
     {
         label: "line-break",
@@ -100,8 +94,8 @@ let hello = 'world'
     {
         label: "divider",
         value: `
-Optional
----`,
+---
+`,
     },
     {
         label: "footnote",
@@ -113,10 +107,10 @@ Optional
     },
     {
         label: "embed",
-        value: "![[page]]",
+        value: "![[]]",
     },
     {
         label: "tag",
-        value: "#tag",
+        value: "#",
     },
 ]
