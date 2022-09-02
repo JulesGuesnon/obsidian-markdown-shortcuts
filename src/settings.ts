@@ -57,7 +57,6 @@ export default class SettingTab extends PluginSettingTab {
                     .setTooltip(t.settings.simpleCommands.tooltip)
                     .setValue(this.plugin.settings.simpleCommands)
                     .onChange(async value => {
-                        toggle.setValue(value)
                         this.plugin.settings.simpleCommands = value
                         await this.plugin.saveSettings()
                     })

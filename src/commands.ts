@@ -8,6 +8,6 @@ export type Command = {
 }
 
 export function resolveCommands(plugin: MarkdownShortcuts) {
-    if (this.plugin.settings.simpleCommands) return simpleCommands
+    if (plugin.settings.simpleCommands) return simpleCommands
     return exampleCommands
 }
