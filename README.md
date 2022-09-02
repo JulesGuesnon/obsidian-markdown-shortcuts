@@ -24,7 +24,8 @@ All you have to do is to write a `>` whenever you want in a file, then make your
 
 ## Configure the plugin
 
-You can change the character that will trigger the commands in the settings
+-   `Trigger character` Set the character that will trigger the commands.
+-   `Simple commands` Insert commands without examples.
 
 ![settings.png](./images/settings.png)
 

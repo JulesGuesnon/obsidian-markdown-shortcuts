@@ -8,7 +8,7 @@ import {
     EditorSuggestTriggerInfo,
     TFile,
 } from "obsidian"
-import {resolveCommands, Command} from "./commands"
+import { resolveCommands, Command } from "./commands"
 import t from "./i18n"
 
 export default class CommandsSuggest extends EditorSuggest<Command> {

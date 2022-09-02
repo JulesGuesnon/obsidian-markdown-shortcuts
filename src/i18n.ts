@@ -19,7 +19,7 @@ class T {
                 simpleCommands: {
                     title: "Simple commands",
                     description:
-                    "Insert commands without examples: \"[]()\" instead of \"[link text](https://my.link)\"",
+                        "Insert commands without examples: [ ]( ) instead of [link text](https://my.link)",
                     tooltip: "Simple commands",
                 },
             },
@@ -47,8 +47,7 @@ class T {
                 },
                 simpleCommands: {
                     title: "je ne parle pas français",
-                    description:
-                        "je ne parle pas français",
+                    description: "je ne parle pas français",
                     tooltip: "je ne parle pas français",
                 },
             },
