@@ -48,5 +48,19 @@ export default class SettingTab extends PluginSettingTab {
                     }
                 )
             })
+
+        new Setting(containerEl)
+            .setName(t.settings.simpleCommands.title)
+            .setDesc(t.settings.simpleCommands.description)
+            .addToggle(toggle => {
+                toggle
+                    .setTooltip(t.settings.simpleCommands.tooltip)
+                    .setValue(this.plugin.settings.simpleCommands)
+                    .onChange(async value => {
+                        toggle.setValue(value)
+                        this.plugin.settings.simpleCommands = value
+                        await this.plugin.saveSettings()
+                    })
+            })
     }
 }

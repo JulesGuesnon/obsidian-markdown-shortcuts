@@ -16,6 +16,12 @@ class T {
                     description:
                         "Which character should show the suggestions. (press a key to replace the current char)",
                 },
+                simpleCommands: {
+                    title: "Simple commands",
+                    description:
+                    "Insert commands without examples: \"[]()\" instead of \"[link text](https://my.link)\"",
+                    tooltip: "Simple commands",
+                },
             },
             commandsSuggest: {
                 noResult: "No result",
@@ -38,6 +44,12 @@ class T {
                     title: "Caractère de déclenchement",
                     description:
                         "Quel caractère doit déclencher l'affichage des suggestions. (appuyez sur une touche pour remplacer le caractère actuel)",
+                },
+                simpleCommands: {
+                    title: "je ne parle pas français",
+                    description:
+                        "je ne parle pas français",
+                    tooltip: "je ne parle pas français",
                 },
             },
             commandsSuggest: {
