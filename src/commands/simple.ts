@@ -25,19 +25,19 @@ export default [
     },
     {
         label: "bold",
-        value: "** **",
+        value: "****",
     },
     {
         label: "italic",
-        value: "* *",
+        value: "**",
     },
     {
         label: "strike",
-        value: "~~ ~~",
+        value: "~~~~",
     },
     {
         label: "highlight",
-        value: "== ==",
+        value: "====",
     },
     {
         label: "quote",

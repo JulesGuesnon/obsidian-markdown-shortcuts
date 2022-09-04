@@ -1,6 +1,6 @@
-import MarkdownShortcuts from "../main"
-import exampleCommands from "./exampleCommands"
-import simpleCommands from "./simpleCommands"
+import MarkdownShortcuts from "../../main"
+import exampleCommands from "./example"
+import simpleCommands from "./simple"
 
 export type Command = {
     label: string
