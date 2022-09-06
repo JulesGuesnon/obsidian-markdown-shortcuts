@@ -1,6 +1,6 @@
 import MarkdownShortcuts from "../../main"
-import exampleCommands from "./example"
-import simpleCommands from "./simple"
+import defaultCommands from "./default"
+import examplelessCommands from "./exampleless"
 
 export type Command = {
     label: string
@@ -8,6 +8,6 @@ export type Command = {
 }
 
 export function resolveCommands(plugin: MarkdownShortcuts) {
-    if (plugin.settings.simpleCommands) return simpleCommands
-    return exampleCommands
+    if (plugin.settings.examplelessCommands) return examplelessCommands
+    return defaultCommands
 }

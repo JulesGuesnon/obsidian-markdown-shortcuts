@@ -3,12 +3,12 @@ import { Settings, CommandsSuggest, t } from "./src"
 
 interface MarkdownShortcutsSettings {
     triggerChar: string
-    simpleCommands: boolean
+    examplelessCommands: boolean
 }
 
 const DEFAULT_SETTINGS: MarkdownShortcutsSettings = {
     triggerChar: ">",
-    simpleCommands: false,
+    examplelessCommands: false,
 }
 
 export default class MarkdownShortcuts extends Plugin {

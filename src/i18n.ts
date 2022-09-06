@@ -1,6 +1,6 @@
 class T {
     lang: string
-
+  
     all = {
         en: {
             settings: {
@@ -16,11 +16,11 @@ class T {
                     description:
                         "Which character should show the suggestions. (press a key to replace the current char)",
                 },
-                simpleCommands: {
-                    title: "Simple commands",
+                examplelessCommands: {
+                    title: "Exampleless commands",
                     description:
                         "Insert commands without examples: [ ]( ) instead of [link text](https://my.link)",
-                    tooltip: "Simple commands",
+                    tooltip: "Exampleless commands",
                 },
             },
             commandsSuggest: {
@@ -45,7 +45,7 @@ class T {
                     description:
                         "Quel caractère doit déclencher l'affichage des suggestions. (appuyez sur une touche pour remplacer le caractère actuel)",
                 },
-                simpleCommands: {
+                examplelessCommands: {
                     title: "je ne parle pas français",
                     description: "je ne parle pas français",
                     tooltip: "je ne parle pas français",
@@ -60,14 +60,15 @@ class T {
             },
         },
     }
-
+  
     constructor() {
         this.lang = localStorage.getItem("language")
     }
-
+  
     get texts(): typeof this.all.en {
         return this.all[this.lang === "fr" ? "fr" : "en"]
     }
-}
-
-export default new T().texts
+  }
+  
+  export default new T().texts
+  
