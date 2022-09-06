@@ -1,6 +1,6 @@
 class T {
     lang: string
-  
+
     all = {
         en: {
             settings: {
@@ -60,15 +60,14 @@ class T {
             },
         },
     }
-  
+
     constructor() {
         this.lang = localStorage.getItem("language")
     }
-  
+
     get texts(): typeof this.all.en {
         return this.all[this.lang === "fr" ? "fr" : "en"]
     }
-  }
-  
-  export default new T().texts
-  
+}
+
+export default new T().texts
