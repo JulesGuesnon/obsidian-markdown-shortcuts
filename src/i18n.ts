@@ -46,9 +46,10 @@ class T {
                         "Quel caractère doit déclencher l'affichage des suggestions. (appuyez sur une touche pour remplacer le caractère actuel)",
                 },
                 examplelessCommands: {
-                    title: "je ne parle pas français",
-                    description: "je ne parle pas français",
-                    tooltip: "je ne parle pas français",
+                    title: "Commandes sans exemple",
+                    description:
+                        "Insère des commandes sans exemple: [ ]( ) au lieu de [link text](https://my.link)",
+                    tooltip: "Commandes sans exemple",
                 },
             },
             commandsSuggest: {
