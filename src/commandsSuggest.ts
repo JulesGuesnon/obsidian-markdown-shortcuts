@@ -8,7 +8,7 @@ import {
     EditorSuggestTriggerInfo,
     TFile,
 } from "obsidian"
-import commands, { Command } from "./commands"
+import { resolveCommands, Command } from "./commands"
 import t from "./i18n"
 
 export default class CommandsSuggest extends EditorSuggest<Command> {
@@ -62,7 +62,7 @@ export default class CommandsSuggest extends EditorSuggest<Command> {
     getSuggestions(
         context: EditorSuggestContext
     ): Command[] | Promise<Command[]> {
-        const suggestions = commands.filter(({ label }) =>
+        const suggestions = resolveCommands(this.plugin).filter(({ label }) =>
             label.includes(context.query)
         )
 

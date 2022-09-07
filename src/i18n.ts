@@ -16,6 +16,12 @@ class T {
                     description:
                         "Which character should show the suggestions. (press a key to replace the current char)",
                 },
+                examplelessCommands: {
+                    title: "Exampleless commands",
+                    description:
+                        "Insert commands without examples: [ ]( ) instead of [link text](https://my.link)",
+                    tooltip: "Exampleless commands",
+                },
             },
             commandsSuggest: {
                 noResult: "No result",
@@ -38,6 +44,12 @@ class T {
                     title: "Caractère de déclenchement",
                     description:
                         "Quel caractère doit déclencher l'affichage des suggestions. (appuyez sur une touche pour remplacer le caractère actuel)",
+                },
+                examplelessCommands: {
+                    title: "Commandes sans exemple",
+                    description:
+                        "Insère des commandes sans exemple: [ ]( ) au lieu de [link text](https://my.link)",
+                    tooltip: "Commandes sans exemple",
                 },
             },
             commandsSuggest: {
