@@ -1,7 +1,7 @@
 {
     "id": "markdown-shortcuts",
     "name": "Markdown shortcuts",
-    "version": "0.3.1",
+    "version": "0.4.0",
     "minAppVersion": "0.12.17",
     "description": "Allows to write markdown from shortcuts (example: >h1 -> #).",
     "author": "Jules Guesnon",

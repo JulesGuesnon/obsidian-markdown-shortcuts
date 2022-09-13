@@ -1,6 +1,6 @@
 {
     "name": "markdown-shortcuts",
-    "version": "0.3.1",
+    "version": "0.4.0",
     "description": "A configurable plugin for Obsidian that allow you to write commands to make markdown (example: >h1 -> #)",
     "main": "main.js",
     "scripts": {
