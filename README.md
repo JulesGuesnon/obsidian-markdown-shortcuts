@@ -1,4 +1,4 @@
-[![GitHub release](https://img.shields.io/github/release/JulesGuesnon/obsidian-markdown-commands.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/) [![Github all releases](https://img.shields.io/github/downloads/JulesGuesnon/obsidian-markdown-commands/total.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
+[![Release number](https://img.shields.io/github/release/JulesGuesnon/obsidian-markdown-commands.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/) [![Github all releases](https://img.shields.io/github/downloads/JulesGuesnon/obsidian-markdown-commands/total.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
 
 # Obsidian Markdown Shortcuts
 
