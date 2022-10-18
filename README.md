@@ -4,8 +4,6 @@
 
 This is a plugin for Obsidian (https://obsidian.md).
 
-> If you're reading this from Obsidian, you shouldn't see the images. You may want to consider clicking the github link to read with the images
-
 # Why?
 
 If you're used to software like Notion, going from assisted markdown to plain markdown may be a bit hard if you're not used to it. You'll probably have to work with a [cheatsheet](https://www.markdownguide.org/cheat-sheet/) open in a tab in order to make sure you're not doing it wrong. <br/>
